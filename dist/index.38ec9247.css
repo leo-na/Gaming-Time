@@ -1,0 +1,253 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #131312;
+  justify-content: center;
+  align-items: center;
+  font-family: Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif;
+  display: flex;
+}
+
+header {
+  width: 85%;
+  height: 95%;
+  border: 1px solid #fff;
+  flex-wrap: wrap;
+  display: flex;
+  overflow: hidden;
+}
+
+header .menu_side, .song_side {
+  width: 25%;
+  height: 90%;
+  color: #faebd7;
+  background-color: #0f1827;
+  border: 1px solid #fff;
+  position: relative;
+  box-shadow: 5px 0 2px #090909;
+}
+
+header .song_side {
+  width: 75%;
+  background-color: #3e21af;
+}
+
+header .master_play {
+  width: 100%;
+  height: 10%;
+  background: #111727;
+  box-shadow: 0 3px 8px #090f1f;
+}
+
+header .menu_side h1 {
+  margin: 15px 0 0 20px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+header .menu_side .playlist {
+  margin: 40px 0 0 20px;
+}
+
+header .menu_side .playlist h4 {
+  color: #4c5262;
+  cursor: pointer;
+  align-items: center;
+  padding-bottom: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  transition: all .3s linear;
+  display: flex;
+}
+
+header .menu_side .playlist h4:hover {
+  color: #fff;
+}
+
+header .menu_side .playlist h4 span {
+  margin-right: 35px;
+  position: relative;
+}
+
+header .menu_side .playlist h4 span:before {
+  content: "";
+  width: 4px;
+  height: 4px;
+  border: 2px solid #4c5262;
+  border-radius: 50%;
+  transition: all .3s linear;
+  position: absolute;
+  top: -4px;
+}
+
+header .menu_side .playlist h4:hover span:before {
+  border: 2px solid #fff;
+}
+
+header .menu_side .playlist h4 .bi {
+  display: none;
+}
+
+header .menu_side .playlist .active {
+  color: #36e2ec;
+}
+
+header .menu_side .playlist .active span {
+  display: none;
+}
+
+header .menu_side .playlist .active .bi {
+  margin-right: 20px;
+  display: flex;
+}
+
+header .menu_side .menu_song {
+  width: 100%;
+  height: 300px;
+  margin-top: 40px;
+}
+
+header .menu_side .menu_song li {
+  cursor: pointer;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 5px 0 5px 20px;
+  list-style-type: none;
+  transition: all .3s linear;
+  display: flex;
+  position: relative;
+}
+
+header .menu_side .menu_song li:hover {
+  background: #6969aa1a;
+}
+
+header .menu_side .menu_song li span {
+  color: #4c5262;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+header .menu_side .menu_song li img {
+  width: 32px;
+  height: 32px;
+  margin-left: 25px;
+}
+
+header .menu_side .menu_song li h5 {
+  margin-left: 15px;
+  font-size: 11px;
+}
+
+header .menu_side .menu_song li h5 .subtitle {
+  color: #4c5262;
+  font-size: 9px;
+}
+
+header .menu_side .menu_song li .bi {
+  font-size: 16px;
+  position: absolute;
+  top: 6px;
+  right: 15px;
+}
+
+header .master_play {
+  align-items: center;
+  padding: 0 20px;
+  display: flex;
+}
+
+header .master_play .wave {
+  width: 30px;
+  height: 30px;
+  align-items: flex-end;
+  margin-right: 10px;
+  padding-bottom: 5px;
+  display: flex;
+}
+
+header .master_play .wave .wave1 {
+  width: 3px;
+  height: 10px;
+  background: #36e2ec;
+  border-radius: 10px 10px 0 0;
+  margin-right: 3px;
+  animation: unset;
+}
+
+header .master_play .wave .wave1:nth-child(2) {
+  height: 13px;
+}
+
+header .master_play .wave .wave1:nth-child(3) {
+  height: 8px;
+}
+
+header .master_play .active2 .wave1 {
+  animation: wave 5s linear infinite;
+}
+
+header .master_play .active2 .wave1:nth-child(2) {
+  animation-delay: .4s;
+}
+
+header .master_play .active2 .wave1:nth-child(3) {
+  animation-delay: .8s;
+}
+
+@keyframes wave {
+  0% {
+    height: 10px;
+  }
+
+  50% {
+    height: 15px;
+  }
+
+  100% {
+    height: 10px;
+  }
+}
+
+header .master_play img {
+  width: 35px;
+  height: 35px;
+}
+
+header .master_play h5 {
+  width: 135px;
+  color: #fff;
+  margin-left: 15px;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+header .master_play h5 .subtitle {
+  color: #4c5262;
+  font-size: 11px;
+}
+
+header .master_play .icon {
+  color: #fff;
+  margin: 0 20px 0 40px;
+  font-size: 20px;
+}
+
+header .master_play .icon .bi {
+  cursor: pointer;
+  outline: none;
+}
+
+header .master_play .icon .bi:nth-child(2) {
+  border: 1px solid #6969aa1a;
+  border-radius: 50%;
+  padding: 1px 3px 0 6px;
+}
+
+/*# sourceMappingURL=index.38ec9247.css.map */

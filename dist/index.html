@@ -63,7 +63,35 @@
           </li>
         </div>
       </div>
-      <div class="song_side"></div>
+      <div class="song_side">
+        <nav>
+          <ul>
+            <li>Discover <span></span></li>
+            <li>MY LIBRARY</li>
+            <li>RADIO</li>
+          </ul>
+          <div class="search">
+            <i class="bi bi-search"></i>
+            <input type="text" placeholder="Search Music...">
+          </div>
+          <div class="user">
+            <img src="/burna.e08a2e6f.jpg" class="user" title="LEO CODER">
+          </div>
+        </nav>
+        <div class="content">
+          <h1>Alen Walker-Fade</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut ab
+            soluta Cupiditate <br>
+            blanditiis minima impedit quae eveniet, incidunt quos necessitatibus
+            vero
+          </p>
+          <div class="buttons">
+            <button>PLAY</button>
+            <button>FOLLOW</button>
+          </div>
+        </div>
+      </div>
       <div class="master_play">
         <div class="wave">
           <div class="wave1"></div>
@@ -80,8 +108,21 @@
           <i class="bi bi-play-fill"></i>
           <i class="bi bi-skip-end-fill"></i>
         </div>
+        <span id="currentStart">0:00</span>
+        <div class="bar">
+          <input type="range" id="seek" min="0" value="0" max="100">
+          <div class="bar2" id="bar2"></div>
+          <div class="dot"></div>
+        </div>
+        <span id="currentEnd">0:00</span>
+        <div class="vol">
+          <i class="bi bi-volume-down-fill"></i>
+          <input type="range" id="vol" min="0" value="0" max="100">
+          <div class="vol_bar"></div>
+          <div class="dot" id="vol_dot"></div>
+        </div>
       </div>
     </header>
     <script src="/index.816e7b21.js"></script>
-  </body>
+  <script src="/My-music-page.59712999.js"></script></body>
 </html>
